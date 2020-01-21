@@ -28,22 +28,42 @@
   color: #61dafb;
 }
 
-.MainContainer {
-  height: 60vh;
+.MainBgLayer {
+  background-color: rgba(255, 0, 0, 0.5);
+  /* height: 100%; */
 }
 
-.MainFooterRow {
-  position: absolute;
-  bottom: 0;
-  height: 20rem;
-}
-
-.MainCol {
-
+.HeaderRow {
+  height: 30vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10rem;
 }
 
 .MainRow {
-  height: 30rem;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  height: 60vh;
+  margin: 10rem;
+}
+
+.MainDiv {
+    /* height: 100%; */
+}
+
+.MainFooterRow {
+  /* position: absolute;
+  bottom: 0; */
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.MainCol {
+  border: 1px solid black;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.FooterCol {
+  /* border-top: 1px solid black; */
 }
 
 .MainBgLayer {
