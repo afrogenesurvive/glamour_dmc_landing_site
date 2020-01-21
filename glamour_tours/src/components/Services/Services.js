@@ -5,14 +5,14 @@ import Nav from 'react-bootstrap/Nav';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
-import './Company.css';
+import './Services.css';
 
-const company = (props) =>{
+const services = (props) =>{
 
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-      <Row className="CompanyMainRow">
-        <Col sm={3} className="CompanyMenuCol">
+      <Row className="ServicesMainRow">
+        <Col sm={3} className="ServicesMenuCol">
           <Nav variant="pills" className="flex-column">
             <Nav.Item>
               <Nav.Link eventKey="first">Tab 1</Nav.Link>
@@ -22,13 +22,13 @@ const company = (props) =>{
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={9} className="CompanyContentCol">
+        <Col sm={9} className="ServicesContentCol">
           <Tab.Content>
             <Tab.Pane eventKey="first">
-              Company 1
+              Services 1
             </Tab.Pane>
             <Tab.Pane eventKey="second">
-              Company 2
+              Services 2
             </Tab.Pane>
           </Tab.Content>
         </Col>
@@ -37,4 +37,4 @@ const company = (props) =>{
   )
 }
 
-export default company;
+export default services;

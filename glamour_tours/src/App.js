@@ -6,6 +6,10 @@ import Col from 'react-bootstrap/Col';
 
 import MainNavigation from './components/MainNavigation/MainNavigation';
 import Company from './components/Company/Company';
+import Services from './components/Services/Services';
+import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer';
+import ContactForm from './components/Forms/ContactForm';
 
 import logo from './logo.svg';
 import './App.css';
@@ -20,6 +24,8 @@ class App extends Component {
     contentItem: null,
     hero: true,
     loading: false,
+    footer: true,
+    contactForm: false,
   };
 
   constructor(props) {
@@ -57,6 +63,21 @@ class App extends Component {
       })
   }
 
+
+  openContactForm = () => {
+    console.log(`
+        opening contact form...
+      `);
+      this.setState({ contentOn: true, contactForm: true, hero: false })
+  }
+
+  closeContactForm = () => {
+    console.log(`
+        closing contact form...
+      `);
+      this.setState({ contentOn: false, contactForm: false })
+  }
+
   render() {
     return (
       <div className="App">
@@ -67,14 +88,9 @@ class App extends Component {
         />
           <div className="MainDiv">
             {this.state.hero === true && (
-            <Row className="HeaderRow">
-              <Col lg={9} className="MainCol">
-                Hero Image
-              </Col>
-              <Col lg={3} className="MainCol">
-                Hero Text
-              </Col>
-            </Row>
+              <Hero
+                onOpenContactForm={this.openContactForm}
+              />
             )}
 
             <Row className="MainRow">
@@ -82,20 +98,28 @@ class App extends Component {
 
               {this.state.contentOn === true && (
                 <Col className="MainCol MainColContent">
+                  {this.state.contactForm === true && (
+                    <ContactForm
+                      onCloseContactForm={this.closeContactForm}
+                    />
+                  )}
                   {this.state.contentItem === "company" && (
                     <Company />
                   )}
+
                   {this.state.contentItem === "services" && (
-                    <p>Services Content</p>
+                    <Services />
                   )}
                 </Col>
               )}
 
             </Row>
 
-            <Row className="MainFooterRow">
-              <Col className="MainCol FooterCol">Footer</Col>
-            </Row>
+            {this.state.footer === true && (
+              <Row className="MainFooterRow">
+                <Footer />
+              </Row>
+            )}
           </div>
         </div>
       </div>
