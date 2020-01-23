@@ -26,6 +26,7 @@ class App extends Component {
     loading: false,
     footer: true,
     contactForm: false,
+    learnMore: false
   };
 
   constructor(props) {
@@ -48,7 +49,10 @@ class App extends Component {
         contentOn: true,
         subMenuItem: args,
         contentItem: args,
-        hero: false })
+        contactForm: false,
+        learnMore: false,
+        hero: false
+      })
   }
 
   returnHome = () => {
@@ -68,7 +72,7 @@ class App extends Component {
     console.log(`
         opening contact form...
       `);
-      this.setState({ contentOn: true, contactForm: true, hero: false })
+      this.setState({ contentOn: true, contactForm: true, hero: false, contentItem: null })
   }
 
   closeContactForm = () => {
@@ -76,6 +80,20 @@ class App extends Component {
         closing contact form...
       `);
       this.setState({ contentOn: false, contactForm: false })
+  }
+
+  openLearnMore = () => {
+    console.log(`
+        opening learn more...
+      `);
+      this.setState({ contentOn: true, learnMore: true, hero: false, contentItem: null })
+  }
+
+  closeLearnMore = () => {
+    console.log(`
+        closing learn more...
+      `);
+      this.setState({ contentOn: false, learnMore: false })
   }
 
   render() {
@@ -90,6 +108,7 @@ class App extends Component {
             {this.state.hero === true && (
               <Hero
                 onOpenContactForm={this.openContactForm}
+                onOpenLearnMore={this.openLearnMore}
               />
             )}
 
@@ -102,6 +121,9 @@ class App extends Component {
                     <ContactForm
                       onCloseContactForm={this.closeContactForm}
                     />
+                  )}
+                  {this.state.learnMore === true && (
+                    <p>LearnMore</p>
                   )}
                   {this.state.contentItem === "company" && (
                     <Company />

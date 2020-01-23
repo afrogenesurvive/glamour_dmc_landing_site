@@ -15,10 +15,10 @@ const company = (props) =>{
         <Col sm={3} className="CompanyMenuCol">
           <Nav variant="pills" className="flex-column">
             <Nav.Item>
-              <Nav.Link eventKey="first">Tab 1</Nav.Link>
+              <Nav.Link className="contentMenuItem" eventKey="first">Tab 1</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="second">Tab 2</Nav.Link>
+              <Nav.Link className="contentMenuItem" eventKey="second">Tab 2</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>

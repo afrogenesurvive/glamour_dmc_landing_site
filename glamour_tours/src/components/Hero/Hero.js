@@ -12,15 +12,23 @@ const hero = (props) =>{
 
   return (
     <Row className="HeaderRow">
+
       <Col lg={9} className="MainCol">
         Hero Text
       </Col>
+
       <Col lg={3} className="MainCol">
         Hero Image
       </Col>
-      <Button variant="danger" size="sm" onClick={props.onOpenContactForm}>
+
+      <Button variant="primary" className="HeroButton" onClick={props.onOpenContactForm}>
         Contact Us
       </Button>
+
+      <Button variant="primary" className="HeroButton" onClick={props.onOpenLearnMore}>
+        Learn More
+      </Button>
+
     </Row>
   )
 }
