@@ -19,6 +19,7 @@ const mainNavigation = (props) =>{
           <Nav.Link onClick={props.onMainMenuSelect.bind(this, "news")} href="#link">News</Nav.Link>
           <Nav.Link onClick={props.onMainMenuSelect.bind(this, "gallery")} href="#link">Gallery</Nav.Link>
           <Nav.Link onClick={props.onMainMenuSelect.bind(this, "contact")} href="#link">Contact</Nav.Link>
+          <Nav.Link onClick={props.onShowOverlay} href="#link">Overlay</Nav.Link>
 
           {
             // <NavDropdown title="Dropdown" id="basic-nav-dropdown">
