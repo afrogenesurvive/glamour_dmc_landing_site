@@ -1,0 +1,22 @@
+.FooterRow1 {
+  height: 3rem;
+}
+
+.FooterBrand {
+  margin: .5rem 0;
+  color: white;
+}
+
+.copyrightText {
+  margin: 0 auto;
+  font-size: .7rem;
+}
+
+.FooterList1 {
+  /* padding: 0; */
+  list-style-type: none;
+}
+
+.FooterCol {
+  /* padding: 0; */
+}

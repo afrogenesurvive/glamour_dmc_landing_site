@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+
 import Overlay from './components/Overlay/Overlay';
 import MainNavigation from './components/MainNavigation/MainNavigation';
 import Company from './components/Company/Company';
@@ -12,6 +13,7 @@ import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import ContactForm from './components/Forms/ContactForm';
 import LearnMore from './components/LearnMore/LearnMore';
+import CarouselBg from './components/CarouselBg/CarouselBg';
 
 import logo from './logo.svg';
 import './App.css';
@@ -45,6 +47,7 @@ class App extends Component {
       NavBar Item Selected..
       ${JSON.stringify(args)}
       `);
+      this.showOverlay();
 
       this.setState({
         subMenuOn: true,
@@ -61,6 +64,7 @@ class App extends Component {
     console.log(`
       returning home...
       `);
+      this.showOverlay();
 
       this.setState({
         subMenuOn: false,
@@ -81,13 +85,14 @@ class App extends Component {
           closing overlay...
           `);
         this.setState({ loading: false})
-      }, 1000);
+      }, 500);
   }
 
   openContactForm = () => {
     console.log(`
         opening contact form...
       `);
+      this.showOverlay();
       this.setState({ contentOn: true, contactForm: true, hero: false, contentItem: null, learnMore: false })
   }
 
@@ -102,6 +107,7 @@ class App extends Component {
     console.log(`
         opening learn more...
       `);
+      this.showOverlay();
       this.setState({ contentOn: true, learnMore: true, hero: false, contentItem: null, contactForm: false })
   }
 
@@ -120,6 +126,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="MainBgLayer">
+
+        <CarouselBg />
+
         <MainNavigation
           onMainMenuSelect={this.mainMenuSelect}
           onReturnHome={this.returnHome}
