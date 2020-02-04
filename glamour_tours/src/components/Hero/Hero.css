@@ -1,3 +1,29 @@
 .HeroButton {
   height: 3rem;
+  margin: 0 3rem;
+}
+
+.HeroCol {
+  height: 30vh;
+  /* border:  1px solid white; */
+}
+
+.ImageCol {
+
+}
+
+.TextCol {
+  padding: 5rem;
+}
+
+.ctaBox {
+  margin:  3rem 0 3rem 5rem;
+}
+
+.heroText {
+  color: #ffffff;
+}
+
+.heroHeading {
+  color: #ffffff;
 }

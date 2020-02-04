@@ -2,44 +2,42 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './CarouselBg.css';
 
+import slide1 from '../../assets/images/a.jpg';
+import slide2 from '../../assets/images/e.jpg';
+import slide3 from '../../assets/images/c.jpg';
+import slide4 from '../../assets/images/f.jpg';
+
 const carouselBg = (props) =>{
 
   return (
-    <Carousel>
+      <Carousel className="carouselBg" controls={false} indicators={false} interval={9000}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          className="carouselImg"
+          src={slide2}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          className="carouselImg"
+          src={slide1}
           alt="Third slide"
         />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          className="carouselImg"
+          src={slide3}
           alt="Third slide"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="carouselImg"
+          src={slide4}
+          alt="Fourth slide"
+        />
       </Carousel.Item>
     </Carousel>
   )

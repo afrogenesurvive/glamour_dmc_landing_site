@@ -13,21 +13,25 @@ const hero = (props) =>{
   return (
     <Row className="HeaderRow">
 
-      <Col lg={9} className="MainCol">
-        Hero Text
+      <Col lg={9} className="HeroCol TextCol">
+        <h1 className="heroHeading">Glamour Tours</h1>
+        <p className="heroText">The Mango is now ripe...</p>
       </Col>
 
-      <Col lg={3} className="MainCol">
-        Hero Image
+      <Col lg={3} className="HeroCol ImageCol">
+        <p className="heroText">Hero Image</p>
       </Col>
 
-      <Button variant="primary" className="HeroButton" onClick={props.onOpenContactForm}>
-        Contact Us
-      </Button>
 
-      <Button variant="primary" className="HeroButton" onClick={props.onOpenLearnMore}>
-        Learn More
-      </Button>
+      <div className="ctaBox">
+        <Button variant="primary" className="HeroButton" onClick={props.onOpenContactForm}>
+          Contact Us
+        </Button>
+
+        <Button variant="primary" className="HeroButton" onClick={props.onOpenLearnMore}>
+          Learn More
+        </Button>
+      </div>
 
     </Row>
   )

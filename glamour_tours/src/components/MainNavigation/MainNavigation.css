@@ -2,3 +2,16 @@
   background-color: rgba(0, 0, 0, 0.5);
   height: 5rem;
 }
+
+.navbarItemText {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-right: 1rem;
+}
+
+.navbarBrandText {
+  color: #ffffff;
+  margin-right: 3rem;
+}

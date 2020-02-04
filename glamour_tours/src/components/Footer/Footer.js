@@ -27,13 +27,27 @@ const footer = (props) =>{
 
         <Col md="2" className="FooterCol">
           <ul className="FooterList1">
-            <li>Home</li>
-            <li>Company</li>
-            <li>Services</li>
-            <li>Destinations</li>
-            <li>News</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+            <li>
+            <p className="footerItemText">Home</p>
+            </li>
+            <li>
+            <p className="footerItemText">Company</p>
+            </li>
+            <li>
+            <p className="footerItemText">Services</p>
+            </li>
+            <li>
+            <p className="footerItemText">Destinations</p>
+            </li>
+            <li>
+            <p className="footerItemText">News</p>
+            </li>
+            <li>
+            <p className="footerItemText">Gallery</p>
+            </li>
+            <li>
+            <p className="footerItemText">Contact</p>
+            </li>
           </ul>
         </Col>
       </Row>

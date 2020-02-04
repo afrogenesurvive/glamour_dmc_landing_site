@@ -7,9 +7,14 @@
   color: white;
 }
 
+.footerItemText {
+  color: #ffffff;
+}
+
 .copyrightText {
   margin: 0 auto;
   font-size: .7rem;
+  color: #ffffff;
 }
 
 .FooterList1 {
@@ -17,6 +22,7 @@
   list-style-type: none;
 }
 
-.FooterCol {
+.MainCol {
   /* padding: 0; */
+  background-color: rgba(0, 0, 0, 0.6);
 }
