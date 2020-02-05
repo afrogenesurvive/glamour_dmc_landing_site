@@ -1,6 +1,7 @@
-
 .ServicesMainRow {
   /* padding: 2rem 5rem; */
+  width: 75vw;
+  margin: 13rem auto;
 }
 
 .ServicesMenuCol {
@@ -8,17 +9,37 @@
 }
 
 .ServicesContentCol {
-  border: 1px solid black;
-  max-width: 40rem;
-  margin-left: 15rem;
+  /* border: 1px solid black; */
+  /* max-width: 40rem; */
+  /* margin-left: 15rem; */
+
+}
+
+
+.ServicesContentDiv {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 2rem;
+  height:90%;
+  border-radius: 5px;
 }
 
 .MainColContent {
   padding: 0;
 }
 
-.contentMenuItem {
+.servicesContentMenuItem {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid #ffffff;
   margin: 2rem;
-  height: 4.5rem;
-  padding: 1.5rem;
+  /* height: 2rem; */
+  padding: 1rem;
+  width: 9rem;
+}
+
+.Col2 {
+  height: 40rem;
+}
+
+.servicesContentHeading {
+  color: #ffffff;
 }

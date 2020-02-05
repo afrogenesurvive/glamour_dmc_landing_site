@@ -6,16 +6,16 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Button from 'react-bootstrap/Button';
 
-import './Forms.css';
+import './ContactForm.css';
 
 const contactForm = (props) =>{
 
   return (
     <Row className="ContactFormRow">
       <Col className="CompanyMenuCol">
-        <p>Conact Form</p>
+        <h1 className="contactFormHeading">Learn More</h1>
         <Button variant="danger" size="sm" onClick={props.onCloseContactForm}>
-          X
+          Close
         </Button>
       </Col>
     </Row>

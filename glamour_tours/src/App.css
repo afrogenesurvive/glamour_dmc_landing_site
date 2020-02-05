@@ -34,17 +34,12 @@
   /* height: 100%; */
 }
 
-.HeaderRow {
-  /* height: 45vh; */
-  width: 50vw;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 10rem;
-}
+
 
 .MainRow {
   /* background-color: rgba(0, 0, 0, 0.3); */
-  height: 60vh;
-  margin: 10rem;
+  height: 130vh;
+  /* margin: 10rem; */
 }
 
 .MainDiv {
@@ -54,18 +49,18 @@
 .MainFooterRow {
   /* position: absolute;
   bottom: 0; */
-  height: 30vh;
+  height: fit-content;
   /* background-color: rgba(0, 0, 0, 0.6); */
 }
 
 .MainCol {
-  /* border: 1px solid black; */
+
   margin: 0 !important;
   padding: 0;
 }
 
 .MainColContent {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .FooterCol {

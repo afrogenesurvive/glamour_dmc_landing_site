@@ -1,12 +1,12 @@
-.LearnMoreRow {
-  margin: 13rem auto;
+.ContactFormRow {
+  margin: 9rem auto;
   /* border: 1px solid black; */
   border-radius: 5px;
-  width: 70vw;
-  height: 50rem;
+  width: 60vw;
+  height: 30rem;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.learnMoreHeading {
+.contactFormHeading {
   color: #ffffff;
 }

@@ -100,7 +100,7 @@ class App extends Component {
     console.log(`
         closing contact form...
       `);
-      this.setState({ contentOn: false, contactForm: false })
+      this.setState({ contentOn: false, contactForm: false, hero: true })
   }
 
   openLearnMore = () => {
@@ -115,7 +115,7 @@ class App extends Component {
     console.log(`
         closing learn more...
       `);
-      this.setState({ contentOn: false, learnMore: false })
+      this.setState({ contentOn: false, learnMore: false, hero: true })
   }
 
   componentWillUnmount() {
@@ -140,14 +140,15 @@ class App extends Component {
         )}
 
           <div className="MainDiv">
+
+            <Row className="MainRow">
+
             {this.state.hero === true && (
               <Hero
                 onOpenContactForm={this.openContactForm}
                 onOpenLearnMore={this.openLearnMore}
               />
             )}
-
-            <Row className="MainRow">
 
 
               {this.state.contentOn === true && (

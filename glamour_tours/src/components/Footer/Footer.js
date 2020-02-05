@@ -10,7 +10,7 @@ import './Footer.css';
 const footer = (props) =>{
 
   return (
-    <Col className="MainCol FooterCol">
+    <Col className="FooterMasterCol">
       <Row className="FooterRow1">
         <Col md="2" className="FooterCol">
           <p className="FooterBrand">Brand</p>

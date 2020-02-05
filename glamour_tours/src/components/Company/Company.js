@@ -12,25 +12,32 @@ const company = (props) =>{
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
       <Row className="CompanyMainRow">
-        <Col sm={3} className="CompanyMenuCol">
+        <Col md={3} className="CompanyMenuCol Col1">
           <Nav variant="pills" className="flex-column">
             <Nav.Item>
-              <Nav.Link className="contentMenuItem" eventKey="first">Tab 1</Nav.Link>
+              <Nav.Link className="companyContentMenuItem" eventKey="first">
+              Tab 1
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className="contentMenuItem" eventKey="second">Tab 2</Nav.Link>
+              <Nav.Link className="companyContentMenuItem" eventKey="second">
+              Tab 2
+              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={9} className="CompanyContentCol">
+
+        <Col md={9} className="CompanyContentCol Col2">
+        <div className="CompanyContentDiv">
           <Tab.Content>
             <Tab.Pane eventKey="first">
-              Company 1
+              <h1 className="companyContentHeading">Company 1</h1>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
-              Company 2
+              <h1 className="companyContentHeading">Company 2</h1>
             </Tab.Pane>
           </Tab.Content>
+        </div>
         </Col>
       </Row>
     </Tab.Container>

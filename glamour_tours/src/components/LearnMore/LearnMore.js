@@ -8,15 +8,13 @@ import './LearnMore.css';
 const learnMore = (props) =>{
 
   return (
-    <Row className="HeaderRow">
-
-      <Col lg={9} className="MainCol">
-        learnMore
+    <Row className="LearnMoreRow">
+      <Col className="CompanyMenuCol">
+        <h1 className="learnMoreHeading">Learn More</h1>
         <Button variant="danger" size="sm" onClick={props.onCloseLearnMore}>
-          X
+          Close
         </Button>
       </Col>
-
     </Row>
   )
 }

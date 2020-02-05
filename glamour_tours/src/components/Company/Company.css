@@ -1,5 +1,7 @@
 .CompanyMainRow {
   /* padding: 2rem 5rem; */
+  width: 75vw;
+  margin: 13rem auto;
 }
 
 .CompanyMenuCol {
@@ -7,17 +9,37 @@
 }
 
 .CompanyContentCol {
-  border: 1px solid black;
-  max-width: 40rem;
-  margin-left: 15rem;
+  /* border: 1px solid black; */
+  /* max-width: 40rem; */
+  /* margin-left: 15rem; */
+
+}
+
+
+.CompanyContentDiv {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 2rem;
+  height:90%;
+  border-radius: 5px;
 }
 
 .MainColContent {
   padding: 0;
 }
 
-.contentMenuItem {
+.companyContentMenuItem {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid #ffffff;
   margin: 2rem;
-  height: 4.5rem;
-  padding: 1.5rem;
+  /* height: 2rem; */
+  padding: 1rem;
+  width: 9rem;
+}
+
+.Col2 {
+  height: 40rem;
+}
+
+.companyContentHeading {
+  color: #ffffff;
 }
