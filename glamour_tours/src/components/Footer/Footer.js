@@ -12,7 +12,7 @@ const footer = (props) =>{
   return (
     <Col className="FooterMasterCol">
       <Row className="FooterRow1">
-        <Col md="2" className="FooterCol">
+        <Col md="2" className="FooterCol BrandCol">
           <p className="FooterBrand">Brand</p>
         </Col>
 
