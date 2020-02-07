@@ -60,6 +60,19 @@ class App extends Component {
       })
   }
 
+  footerMenuSelect = (args) => {
+    console.log(`
+      Footer Item Selected..
+      ${JSON.stringify(args)}
+      `);
+      this.showOverlay();
+
+    this.setState({
+      subMenuItem: args,
+      contentItem: args,
+    })
+  }
+
   returnHome = () => {
     console.log(`
       returning home...
@@ -177,7 +190,10 @@ class App extends Component {
 
             {this.state.footer === true && (
               <Row className="MainFooterRow">
-                <Footer />
+                <Footer
+                  onFooterMenuSelect={this.mainMenuSelect}
+                  onReturnHome={this.returnHome}
+                />
               </Row>
             )}
           </div>

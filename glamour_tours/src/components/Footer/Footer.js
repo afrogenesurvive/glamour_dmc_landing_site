@@ -28,13 +28,13 @@ const footer = (props) =>{
         <Col md="2" className="FooterCol">
           <ul className="FooterList1">
             <li>
-            <p className="footerItemText">Home</p>
+            <p className="footerItemText" onClick={props.onReturnHome.bind(this, 'home')}>Home</p>
             </li>
             <li>
-            <p className="footerItemText">Company</p>
+            <p className="footerItemText" onClick={props.onFooterMenuSelect.bind(this, 'company')}>Company</p>
             </li>
             <li>
-            <p className="footerItemText">Services</p>
+            <p className="footerItemText" onClick={props.onFooterMenuSelect.bind(this, 'services')}>Services</p>
             </li>
             <li>
             <p className="footerItemText">Destinations</p>
